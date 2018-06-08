@@ -1,0 +1,50 @@
+Running: D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Files built by Me/Computer Organization Lab/Lab7_2.0/testbench_isim_beh.exe -prj D:/Files built by Me/Computer Organization Lab/Lab7_2.0/testbench_beh.prj work.testbench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/Stall.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/regfile.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/pc.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/mem_wb.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/mem.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/ipcore_dir/RAM.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/ipcore_dir/InstRom.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/if_id.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/id_ex.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/id.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/ex_mem.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/ex.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/div.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/code.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/cpu_top.v" into library work
+Analyzing Verilog file "D:/Files built by Me/Computer Organization Lab/Lab7_2.0/testbench.v" into library work
+Analyzing Verilog file "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module div
+Compiling module code
+Compiling module Stall
+Compiling module pc
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module InstRom
+Compiling module if_id
+Compiling module id
+Compiling module regfile
+Compiling module id_ex
+Compiling module ex
+Compiling module ex_mem
+Compiling module mem
+Compiling module mem_wb
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module RAM
+Compiling module cpu_top
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\testbench_isim_beh.exe.sim\libPortability.dll".
+Compiled 19 Verilog Units
+Built simulation executable D:/Files built by Me/Computer Organization Lab/Lab7_2.0/testbench_isim_beh.exe
+Fuse Memory Usage: 30152 KB
+Fuse CPU Usage: 937 ms

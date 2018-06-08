@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Files built by Me/Computer Organization Lab/Lab7_2.0/testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testbench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/testbench/sel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sel[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/rrst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rrst</obj_property>
+      <obj_property name="ObjectShortName">rrst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/swi" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">swi[7:0]</obj_property>
+      <obj_property name="ObjectShortName">swi[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/id0/inst" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/uut/u_RAM/dpo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dpo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dpo[31:0]</obj_property>
+   </wvobject>
+</wave_config>

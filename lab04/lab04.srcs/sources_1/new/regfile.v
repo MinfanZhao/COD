@@ -1,0 +1,42 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2018/04/19 18:21:11
+// Design Name: 
+// Module Name: regfile
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module regfile(
+input clk,
+input rst_n,
+input [7:0]rAddr,
+input [7:0]wAddr,
+input [31:0]wDin,
+output [31:0]rDout,
+input wEna
+    );
+    reg [31:0]regfiles[0:255];   
+    reg [5:0] i;
+    always@( negedge rst_n or posedge clk)
+    if(!rst_n)begin
+    regfiles[0]<=0;
+    regfiles[1]<=0;
+    end
+    else if(wEna)
+        regfiles[wAddr]<=wDin;
+    assign rDout=regfiles[rAddr];                   
+endmodule

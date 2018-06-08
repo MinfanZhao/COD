@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu May 17 20:54:21 2018
+# Process ID: 2956
+# Current directory: C:/Users/19079/lab05/lab05.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/19079/lab05/lab05.sim/sim_1/behav/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/19079/lab05/lab05.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/19079/lab05/lab05.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/19079/lab05/lab05.sim/sim_1/behav/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 17 20:54:21 2018...

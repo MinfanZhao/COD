@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Files built by Me\Computer Organization Lab\Lab7_2.0\cpu_top.ncd
+OUTFILE=D:\Files built by Me\Computer Organization Lab\Lab7_2.0\cpu_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=D:\Files built by Me\Computer Organization Lab\Lab7_2.0
+LICENSE=WebPack
+USER_INFO=211247418_0_0_659

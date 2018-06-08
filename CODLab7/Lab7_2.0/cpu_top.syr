@@ -1,0 +1,1186 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: cpu_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : cpu_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\Stall.v" into library work
+Parsing module <Stall>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\regfile.v" into library work
+Parsing verilog file "Define.v" included at line 21.
+Parsing module <regfile>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\pc.v" into library work
+Parsing verilog file "Define.v" included at line 21.
+Parsing module <pc>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\mem_wb.v" into library work
+Parsing verilog file "Define.v" included at line 22.
+Parsing module <mem_wb>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\mem.v" into library work
+Parsing verilog file "Define.v" included at line 22.
+Parsing module <mem>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ipcore_dir\RAM.v" into library work
+Parsing module <RAM>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ipcore_dir\InstRom.v" into library work
+Parsing module <InstRom>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\if_id.v" into library work
+Parsing verilog file "Define.v" included at line 21.
+Parsing module <if_id>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\id_ex.v" into library work
+Parsing verilog file "Define.v" included at line 21.
+Parsing module <id_ex>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\id.v" into library work
+Parsing verilog file "Define.v" included at line 22.
+Parsing module <id>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ex_mem.v" into library work
+Parsing verilog file "Define.v" included at line 22.
+Parsing module <ex_mem>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ex.v" into library work
+Parsing verilog file "Define.v" included at line 22.
+Parsing module <ex>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\div.v" into library work
+Parsing module <div>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\code.v" into library work
+Parsing module <code>.
+Analyzing Verilog file "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\cpu_top.v" into library work
+Parsing verilog file "Define.v" included at line 21.
+Parsing module <cpu_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <cpu_top>.
+
+Elaborating module <div>.
+
+Elaborating module <code>.
+
+Elaborating module <Stall>.
+
+Elaborating module <pc>.
+
+Elaborating module <InstRom>.
+WARNING:HDLCompiler:1499 - "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ipcore_dir\InstRom.v" Line 39: Empty module <InstRom> remains a black box.
+
+Elaborating module <if_id>.
+
+Elaborating module <id>.
+WARNING:HDLCompiler:1127 - "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\id.v" Line 75: Assignment to instvalid ignored, since the identifier is never used
+
+Elaborating module <regfile>.
+Reading initialization file \"reg_file.txt\".
+WARNING:HDLCompiler:817 - "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\regfile.v" Line 58: System task readmemh ignored for synthesis
+
+Elaborating module <id_ex>.
+
+Elaborating module <ex>.
+
+Elaborating module <ex_mem>.
+
+Elaborating module <mem>.
+
+Elaborating module <mem_wb>.
+
+Elaborating module <RAM>.
+WARNING:HDLCompiler:1499 - "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cpu_top>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\cpu_top.v".
+    Summary:
+	no macro.
+Unit <cpu_top> synthesized.
+
+Synthesizing Unit <div>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\div.v".
+    Found 29-bit register for signal <count>.
+    Found 1-bit register for signal <page>.
+    Found 4-bit register for signal <sel>.
+    Found 17-bit register for signal <counter>.
+    Found finite state machine <FSM_0> for signal <sel>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 1110                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit adder for signal <counter[16]_GND_2_o_add_2_OUT> created at line 32.
+    Found 29-bit adder for signal <count[28]_GND_2_o_add_7_OUT> created at line 40.
+    Found 17-bit comparator greater for signal <counter[16]_PWR_2_o_LessThan_2_o> created at line 31
+    Found 29-bit comparator greater for signal <count[28]_GND_2_o_LessThan_7_o> created at line 39
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Finite State Machine(s).
+Unit <div> synthesized.
+
+Synthesizing Unit <code>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\code.v".
+    Found 16x8-bit Read Only RAM for signal <data>
+WARNING:Xst:737 - Found 1-bit latch for signal <nnum<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nnum<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nnum<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <nnum<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Latch(s).
+	inferred   4 Multiplexer(s).
+Unit <code> synthesized.
+
+Synthesizing Unit <Stall>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\Stall.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Stall> synthesized.
+
+Synthesizing Unit <pc>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\pc.v".
+WARNING:Xst:647 - Input <stall<5:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <pc>.
+    Found 32-bit adder for signal <pc[31]_GND_9_o_add_3_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <pc> synthesized.
+
+Synthesizing Unit <if_id>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\if_id.v".
+WARNING:Xst:647 - Input <stall<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall<5:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <id_inst>.
+    Found 1-bit register for signal <last_branch>.
+    Found 32-bit register for signal <id_pc>.
+    Summary:
+	inferred  65 D-type flip-flop(s).
+Unit <if_id> synthesized.
+
+Synthesizing Unit <id>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\id.v".
+    Found 32-bit adder for signal <pc_4> created at line 72.
+    Found 32-bit adder for signal <pc_4[31]_immsll[31]_add_47_OUT> created at line 254.
+    Found 1-bit 8-to-1 multiplexer for signal <_n3137> created at line 102.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg2_o<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg1_o<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator equal for signal <reg1_o[31]_reg2_o[31]_equal_47_o> created at line 253
+    Found 32-bit comparator equal for signal <ex_wd_i[31]_reg1_addr_o[31]_equal_142_o> created at line 356
+    Found 32-bit comparator equal for signal <mem_wd_i[31]_reg1_addr_o[31]_equal_145_o> created at line 359
+    Found 32-bit comparator equal for signal <ex_wd_i[31]_reg2_addr_o[31]_equal_159_o> created at line 380
+    Found 32-bit comparator equal for signal <mem_wd_i[31]_reg2_addr_o[31]_equal_162_o> created at line 383
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 Latch(s).
+	inferred   5 Comparator(s).
+	inferred 356 Multiplexer(s).
+Unit <id> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\regfile.v".
+    Found 32x32-bit dual-port RAM <Mram_regs> for signal <regs>.
+    Found 32-bit comparator equal for signal <raddr1[31]_waddr[31]_equal_6_o> created at line 67
+    Found 32-bit comparator equal for signal <raddr2[31]_waddr[31]_equal_16_o> created at line 81
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <id_ex>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\id_ex.v".
+WARNING:Xst:647 - Input <stall<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <ex_alusel>.
+    Found 32-bit register for signal <ex_reg1>.
+    Found 32-bit register for signal <ex_reg2>.
+    Found 32-bit register for signal <ex_wd>.
+    Found 1-bit register for signal <ex_wreg>.
+    Found 32-bit register for signal <ex_inst>.
+    Found 8-bit register for signal <ex_aluop>.
+    Summary:
+	inferred 140 D-type flip-flop(s).
+Unit <id_ex> synthesized.
+
+Synthesizing Unit <ex>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ex.v".
+WARNING:Xst:647 - Input <ex_inst<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 6-bit subtractor for signal <PWR_19_o_GND_79_o_sub_25_OUT> created at line 90.
+    Found 32-bit adder for signal <reg2_i[31]_GND_79_o_add_5_OUT> created at line 48.
+    Found 32-bit adder for signal <result_sum> created at line 49.
+    Found 32-bit adder for signal <mem_addr_o> created at line 52.
+    Found 32-bit shifter logical left for signal <reg2_i[31]_reg1_i[4]_shift_left_22_OUT> created at line 84
+    Found 32-bit shifter logical right for signal <reg2_i[31]_reg1_i[4]_shift_right_23_OUT> created at line 87
+    Found 32-bit shifter logical left for signal <reg2_i[31]_PWR_19_o_shift_left_25_OUT> created at line 90
+    Found 32-bit 4-to-1 multiplexer for signal <_n0132> created at line 58.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   9 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <ex> synthesized.
+
+Synthesizing Unit <ex_mem>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\ex_mem.v".
+WARNING:Xst:647 - Input <stall<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <stall<5:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <mem_wreg>.
+    Found 32-bit register for signal <mem_wdata>.
+    Found 8-bit register for signal <mem_aluop>.
+    Found 32-bit register for signal <mem_mem_addr>.
+    Found 32-bit register for signal <mem_reg2>.
+    Found 32-bit register for signal <mem_wd>.
+    Summary:
+	inferred 137 D-type flip-flop(s).
+Unit <ex_mem> synthesized.
+
+Synthesizing Unit <mem>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\mem.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_data_o<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  32 Latch(s).
+	inferred   7 Multiplexer(s).
+Unit <mem> synthesized.
+
+Synthesizing Unit <mem_wb>.
+    Related source file is "D:\Files built by Me\Computer Organization Lab\Lab7_2.0\mem_wb.v".
+WARNING:Xst:647 - Input <stall<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <wb_wreg>.
+    Found 32-bit register for signal <wb_wdata>.
+    Found 32-bit register for signal <wb_wd>.
+    Summary:
+	inferred  65 D-type flip-flop(s).
+Unit <mem_wb> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port Read Only RAM                    : 1
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 9
+ 17-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 32-bit adder                                          : 6
+ 6-bit subtractor                                      : 1
+# Registers                                            : 23
+ 1-bit register                                        : 5
+ 17-bit register                                       : 1
+ 29-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 13
+ 8-bit register                                        : 2
+# Latches                                              : 100
+ 1-bit latch                                           : 100
+# Comparators                                          : 9
+ 17-bit comparator greater                             : 1
+ 29-bit comparator greater                             : 1
+ 32-bit comparator equal                               : 7
+# Multiplexers                                         : 386
+ 1-bit 2-to-1 multiplexer                              : 335
+ 1-bit 8-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 8
+ 32-bit 2-to-1 multiplexer                             : 37
+ 32-bit 4-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+# Logic shifters                                       : 3
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/RAM.ngc>.
+Reading core <ipcore_dir/InstRom.ngc>.
+Loading core <RAM> for timing and area information for instance <u_RAM>.
+Loading core <InstRom> for timing and area information for instance <u_InstRom>.
+WARNING:Xst:2677 - Node <ex_inst_16> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_17> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_18> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_19> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_20> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_21> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_22> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_23> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_24> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_25> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_26> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_27> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_28> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_29> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_30> of sequential type is unconnected in block <u_id_ex>.
+WARNING:Xst:2677 - Node <ex_inst_31> of sequential type is unconnected in block <u_id_ex>.
+
+Synthesizing (advanced) Unit <code>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <nnum>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <data>          |          |
+    -----------------------------------------------------------------------
+Unit <code> synthesized (advanced).
+
+Synthesizing (advanced) Unit <div>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we_waddr[31]_AND_87_o_0> | high     |
+    |     addrA          | connected to signal <waddr<4:0>>    |          |
+    |     diA            | connected to signal <wdata>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <raddr1<4:0>>   |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_regs1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we_waddr[31]_AND_87_o_1> | high     |
+    |     addrA          | connected to signal <waddr<4:0>>    |          |
+    |     diA            | connected to signal <wdata>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <raddr2<4:0>>   |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 32x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 6
+ 6-bit subtractor                                      : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 29-bit up counter                                     : 1
+# Registers                                            : 440
+ Flip-Flops                                            : 440
+# Comparators                                          : 9
+ 17-bit comparator greater                             : 1
+ 29-bit comparator greater                             : 1
+ 32-bit comparator equal                               : 7
+# Multiplexers                                         : 385
+ 1-bit 2-to-1 multiplexer                              : 335
+ 1-bit 8-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 8
+ 32-bit 2-to-1 multiplexer                             : 37
+ 32-bit 4-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+# Logic shifters                                       : 3
+ 32-bit shifter logical left                           : 2
+ 32-bit shifter logical right                          : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <output_div/FSM_0> on signal <sel[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 1110  | 00
+ 1101  | 01
+ 1011  | 11
+ 0111  | 10
+-------------------
+
+Optimizing unit <cpu_top> ...
+
+Optimizing unit <div> ...
+
+Optimizing unit <pc> ...
+
+Optimizing unit <if_id> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <id_ex> ...
+
+Optimizing unit <ex_mem> ...
+
+Optimizing unit <mem_wb> ...
+
+Optimizing unit <mem> ...
+
+Optimizing unit <code> ...
+
+Optimizing unit <id> ...
+
+Optimizing unit <ex> ...
+WARNING:Xst:1710 - FF/Latch <u_mem_wb/wb_wd_31> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_30> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_29> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_28> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_27> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_26> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_25> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_24> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_23> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_22> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_21> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_20> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_19> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_18> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_17> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_16> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_15> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_12> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_9> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_7> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_6> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_mem_wb/wb_wd_5> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_5> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_6> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_7> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_9> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_12> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_15> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_16> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_17> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_18> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_19> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_20> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_21> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_22> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_23> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_24> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_25> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_26> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_27> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_28> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_29> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_30> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_id_ex/ex_wd_31> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_31> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_30> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_29> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_28> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_27> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_26> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_25> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_24> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_23> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_22> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_21> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_20> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_19> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_18> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_17> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_16> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_15> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_14> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_13> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_12> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_11> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_10> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_9> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_8> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_7> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_6> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u_ex_mem/mem_wd_5> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <u_pc/pc_31> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_30> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_29> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_27> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_26> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_24> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_23> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_21> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_20> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_19> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_18> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_17> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_16> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_15> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_14> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_13> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_12> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_11> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_10> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_1> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_pc/pc_0> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_31> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_30> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_29> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_27> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_26> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_24> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_23> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_21> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_20> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_19> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_18> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_17> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_16> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_15> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_14> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_13> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_12> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_11> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_10> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_1> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_if_id/id_pc_0> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_31> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_30> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_29> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_27> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_26> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_24> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_23> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_21> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_20> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_19> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_18> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_17> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_16> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_15> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_14> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_13> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_12> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_11> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_id_ex/ex_inst_10> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_31> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_30> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_29> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_28> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_27> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_26> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_25> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_24> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_23> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_22> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_21> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_20> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_19> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_18> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_17> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_16> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_15> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_14> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_13> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_12> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_11> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_10> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_1> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:2677 - Node <u_ex_mem/mem_mem_addr_0> of sequential type is unconnected in block <cpu_top>.
+WARNING:Xst:1710 - FF/Latch <output_div/count_28> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_div/count_27> (without init value) has a constant value of 0 in block <cpu_top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cpu_top, actual ratio is 15.
+FlipFlop u_id_ex/ex_aluop_1 has been replicated 1 time(s)
+FlipFlop u_id_ex/ex_reg1_0 has been replicated 2 time(s)
+FlipFlop u_id_ex/ex_reg1_1 has been replicated 2 time(s)
+FlipFlop u_id_ex/ex_reg1_2 has been replicated 1 time(s)
+FlipFlop u_id_ex/ex_reg1_3 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_2 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_26 has been replicated 2 time(s)
+FlipFlop u_if_id/id_inst_27 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_28 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_29 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_3 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_31 has been replicated 1 time(s)
+FlipFlop u_if_id/id_inst_5 has been replicated 1 time(s)
+FlipFlop u_if_id/last_branch has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 329
+ Flip-Flops                                            : 329
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cpu_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1642
+#      GND                         : 2
+#      INV                         : 35
+#      LUT1                        : 57
+#      LUT2                        : 41
+#      LUT3                        : 243
+#      LUT4                        : 166
+#      LUT5                        : 199
+#      LUT6                        : 536
+#      MUXCY                       : 200
+#      MUXF7                       : 22
+#      VCC                         : 1
+#      XORCY                       : 140
+# FlipFlops/Latches                : 493
+#      FD                          : 165
+#      FDR                         : 228
+#      LD                          : 4
+#      LDC                         : 32
+#      LDC_1                       : 64
+# RAMS                             : 78
+#      RAM128X1D                   : 64
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 9
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             493  out of  18224     2%  
+ Number of Slice LUTs:                 1581  out of   9112    17%  
+    Number used as Logic:              1277  out of   9112    14%  
+    Number used as Memory:              304  out of   2176    13%  
+       Number used as RAM:              304
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1659
+   Number with an unused Flip Flop:    1166  out of   1659    70%  
+   Number with an unused LUT:            78  out of   1659     4%  
+   Number of fully used LUT-FF pairs:   415  out of   1659    25%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------+-----------------------------+-------+
+Clock Signal                                                                       | Clock buffer(FF name)       | Load  |
+-----------------------------------------------------------------------------------+-----------------------------+-------+
+clk                                                                                | BUFGP                       | 471   |
+u_mem/_n0062(u_mem/_n0062<7>1:O)                                                   | BUFG(*)(u_mem/mem_data_o_31)| 32    |
+output_div/Mcompar_count[28]_GND_2_o_LessThan_7_o_lut<4>                           | NONE(output_code/nnum_0)    | 4     |
+u_id/ex_aluop_i[7]_reg1_read_o_AND_76_o(u_id/ex_aluop_i[7]_reg1_read_o_AND_76_o2:O)| BUFG(*)(u_id/reg1_o_31)     | 32    |
+u_id/ex_aluop_i[7]_reg2_read_o_AND_82_o(u_id/ex_aluop_i[7]_reg2_read_o_AND_82_o1:O)| BUFG(*)(u_id/reg2_o_0)      | 32    |
+-----------------------------------------------------------------------------------+-----------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.507ns (Maximum Frequency: 133.205MHz)
+   Minimum input arrival time before clock: 12.224ns
+   Maximum output required time after clock: 5.606ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.507ns (frequency: 133.205MHz)
+  Total number of paths / destination ports: 51609 / 1085
+-------------------------------------------------------------------------
+Delay:               7.507ns (Levels of Logic = 11)
+  Source:            u_if_id/last_branch_2 (FF)
+  Destination:       u_id_ex/ex_inst_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: u_if_id/last_branch_2 to u_id_ex/ex_inst_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.525   0.876  u_if_id/last_branch_2 (u_if_id/last_branch_2)
+     LUT3:I2->O           21   0.254   1.538  u_id/Mmux_reg1_addr_o31 (reg1_addr<2>)
+     LUT6:I3->O            1   0.235   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_lut<0> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<0> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<1> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<2> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<3> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<4> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<5> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<5>)
+     MUXCY:CI->O          26   0.235   1.696  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<6> (u_id/ex_wd_i[31]_reg1_addr_o[31]_equal_142_o)
+     LUT6:I2->O           18   0.254   1.235  u_id_ex/Reset_OR_DriverANDClockEnable1401 (u_id_ex/Reset_OR_DriverANDClockEnable)
+     LUT4:I3->O            1   0.254   0.000  u_id_ex/ex_inst_9_rstpot (u_id_ex/ex_inst_9_rstpot)
+     FD:D                      0.074          u_id_ex/ex_inst_9
+    ----------------------------------------
+    Total                      7.507ns (2.163ns logic, 5.345ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2925 / 1022
+-------------------------------------------------------------------------
+Offset:              10.098ns (Levels of Logic = 12)
+  Source:            rrst (PAD)
+  Destination:       u_id_ex/ex_inst_9 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rrst to u_id_ex/ex_inst_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           484   1.328   2.683  rrst_IBUF (rrst_IBUF)
+     LUT3:I0->O           21   0.235   1.538  u_id/Mmux_reg1_addr_o31 (reg1_addr<2>)
+     LUT6:I3->O            1   0.235   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_lut<0> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<0> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<1> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<2> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<3> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<4> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<5> (u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<5>)
+     MUXCY:CI->O          26   0.235   1.696  u_id/Mcompar_ex_wd_i[31]_reg1_addr_o[31]_equal_142_o_cy<6> (u_id/ex_wd_i[31]_reg1_addr_o[31]_equal_142_o)
+     LUT6:I2->O           18   0.254   1.235  u_id_ex/Reset_OR_DriverANDClockEnable1401 (u_id_ex/Reset_OR_DriverANDClockEnable)
+     LUT4:I3->O            1   0.254   0.000  u_id_ex/ex_inst_9_rstpot (u_id_ex/ex_inst_9_rstpot)
+     FD:D                      0.074          u_id_ex/ex_inst_9
+    ----------------------------------------
+    Total                     10.098ns (2.946ns logic, 7.152ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u_mem/_n0062'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.241ns (Levels of Logic = 1)
+  Source:            rrst (PAD)
+  Destination:       u_mem/mem_data_o_31 (LATCH)
+  Destination Clock: u_mem/_n0062 falling
+
+  Data Path: rrst to u_mem/mem_data_o_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           484   1.328   2.454  rrst_IBUF (rrst_IBUF)
+     LDC:CLR                   0.459          u_mem/mem_data_o_30
+    ----------------------------------------
+    Total                      4.241ns (1.787ns logic, 2.454ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u_id/ex_aluop_i[7]_reg1_read_o_AND_76_o'
+  Total number of paths / destination ports: 1650 / 64
+-------------------------------------------------------------------------
+Offset:              12.224ns (Levels of Logic = 7)
+  Source:            rrst (PAD)
+  Destination:       u_id/reg1_o_17 (LATCH)
+  Destination Clock: u_id/ex_aluop_i[7]_reg1_read_o_AND_76_o rising
+
+  Data Path: rrst to u_id/reg1_o_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           484   1.328   2.683  rrst_IBUF (rrst_IBUF)
+     LUT3:I0->O           14   0.235   1.403  u_id/Mmux_aluop_o161 (u_id/Mmux_aluop_o16)
+     LUT6:I2->O           37   0.254   2.059  u_id/Mmux_GND_12_o_imm[31]_mux_147_OUT[0]156 (reg1_read)
+     LUT6:I0->O           16   0.254   1.637  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<31>161 (u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<31>16)
+     LUT6:I0->O            1   0.254   0.910  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<30>11 (u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<30>1)
+     LUT5:I2->O            1   0.235   0.682  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<30>12 (u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<30>11)
+     LUT6:I5->O            1   0.254   0.000  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_150_OUT<30>14 (u_id/GND_12_o_ex_wdata_i[31]_mux_150_OUT<30>)
+     LDC_1:D                   0.036          u_id/reg1_o_30
+    ----------------------------------------
+    Total                     12.224ns (2.850ns logic, 9.374ns route)
+                                       (23.3% logic, 76.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u_id/ex_aluop_i[7]_reg2_read_o_AND_82_o'
+  Total number of paths / destination ports: 1820 / 64
+-------------------------------------------------------------------------
+Offset:              12.157ns (Levels of Logic = 7)
+  Source:            rrst (PAD)
+  Destination:       u_id/reg2_o_16 (LATCH)
+  Destination Clock: u_id/ex_aluop_i[7]_reg2_read_o_AND_82_o rising
+
+  Data Path: rrst to u_id/reg2_o_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           484   1.328   2.683  rrst_IBUF (rrst_IBUF)
+     LUT3:I0->O           14   0.235   1.355  u_id/Mmux_aluop_o161 (u_id/Mmux_aluop_o16)
+     LUT6:I3->O           37   0.235   2.059  u_id/Mmux_reg2_read_o1 (reg2_read)
+     LUT6:I0->O           16   0.254   1.637  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<31>141 (u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<31>14)
+     LUT6:I0->O            1   0.254   0.910  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<30>11 (u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<30>1)
+     LUT5:I2->O            1   0.235   0.682  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<30>12 (u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<30>11)
+     LUT6:I5->O            1   0.254   0.000  u_id/Mmux_GND_12_o_ex_wdata_i[31]_mux_167_OUT<30>14 (u_id/GND_12_o_ex_wdata_i[31]_mux_167_OUT<30>)
+     LDC_1:D                   0.036          u_id/reg2_o_30
+    ----------------------------------------
+    Total                     12.157ns (2.831ns logic, 9.326ns route)
+                                       (23.3% logic, 76.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              5.606ns (Levels of Logic = 2)
+  Source:            output_div/sel_FSM_FFd1 (FF)
+  Destination:       sel<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: output_div/sel_FSM_FFd1 to sel<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.525   1.116  output_div/sel_FSM_FFd1 (output_div/sel_FSM_FFd1)
+     LUT2:I0->O            4   0.250   0.803  output_div/sel_sel[3]1 (sel_3_OBUF)
+     OBUF:I->O                 2.912          sel_3_OBUF (sel<3>)
+    ----------------------------------------
+    Total                      5.606ns (3.687ns logic, 1.919ns route)
+                                       (65.8% logic, 34.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------------------------------+---------+---------+---------+---------+
+                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------+---------+---------+---------+---------+
+clk                                    |    7.507|         |         |         |
+u_id/ex_aluop_i[7]_reg1_read_o_AND_76_o|   12.629|         |         |         |
+u_id/ex_aluop_i[7]_reg2_read_o_AND_82_o|    8.245|         |         |         |
+u_mem/_n0062                           |         |    1.306|         |         |
+---------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u_id/ex_aluop_i[7]_reg1_read_o_AND_76_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.346|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u_id/ex_aluop_i[7]_reg2_read_o_AND_82_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.137|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u_mem/_n0062
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.242|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 33.86 secs
+ 
+--> 
+
+Total memory usage is 329336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  306 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

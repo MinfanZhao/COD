@@ -1,0 +1,16 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/19079/lab05/lab05.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sim_1/new/test.v,1525164434,verilog,,,,test,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/ip/dist_mem_gen_0_2/sim/dist_mem_gen_0.v,1525176390,verilog,,,,dist_mem_gen_0,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/ip/dist_mem_gen_1_1/sim/dist_mem_gen_1.v,1525126969,verilog,,,,dist_mem_gen_1,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/ALU.v,1524988234,verilog,,,,ALU,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/CPU.v,1525176411,verilog,,,,CPU,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/PCBranch.v,1525174743,verilog,,,,PCBranch,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/PCins.v,1525177923,verilog,,,,PCins,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/PCplus.v,1524741446,verilog,,,,PCplus,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/SignExtend.v,1524741694,verilog,,,,SignExtend,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/controlunit.v,1525172461,verilog,,,,controlunit,,,,,,,,
+C:/Users/19079/lab05/lab05.srcs/sources_1/new/regfile.v,1525173843,verilog,,,,regfile,,,,,,,,

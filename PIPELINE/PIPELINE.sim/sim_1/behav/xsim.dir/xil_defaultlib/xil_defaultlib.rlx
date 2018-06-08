@@ -1,0 +1,21 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/19079/PIPELINE/PIPELINE.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sim_1/new/test.v,1528366053,verilog,,,,test,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1528371020,verilog,,,,dist_mem_gen_0,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v,1528346890,verilog,,,,dist_mem_gen_1,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/ALU.v,1528346234,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,ex,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,1528346328,verilog,,,,,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Stall.v,1528346386,verilog,,,,Stall,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/cpu_top.v,1528348846,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,cpu_top,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/ex_mem.v,1528346624,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,ex_mem,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/id.v,1528346504,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,id,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/id_ex.v,1528346573,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,id_ex,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/if_id.v,1528346466,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,if_id,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/mem.v,1528346666,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,mem,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/mem_wb.v,1528346711,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,mem_wb,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/pc.v,1528346417,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,pc,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/regfile.v,1528346537,verilog,,,C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/Define.v,regfile,,,,,,,,
+C:/Users/19079/PIPELINE/PIPELINE.srcs/sources_1/new/seg.v,1528351244,verilog,,,,seg,,,,,,,,

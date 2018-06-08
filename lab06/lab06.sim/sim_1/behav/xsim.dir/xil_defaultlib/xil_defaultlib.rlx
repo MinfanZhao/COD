@@ -1,0 +1,19 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/19079/lab06/lab06.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sim_1/new/test.v,1525114671,verilog,,,,test,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1525110983,verilog,,,,blk_mem_gen_0,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/ALU.v,1525004895,verilog,,,,ALU,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/ControlUnit.v,1525125932,verilog,,,,ControlUnit,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/Instr.v,1525111237,verilog,,,,Instr,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/PCUnit.v,1525116618,verilog,,,,PCUnit,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/RegALUOUT.v,1525111207,verilog,,,,RegALUOUT,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/RegData.v,1525103377,verilog,,,,RegData,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/RegRD.v,1525101688,verilog,,,,RegRD,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/SignExtend.v,1525003715,verilog,,,,SignExtend,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/SrcBMUX.v,1525122128,verilog,,,,SrcBMUX,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/SrcPC.v,1525116424,verilog,,,,SrcPC,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/Top.v,1525122717,verilog,,,,Top,,,,,,,,
+C:/Users/19079/lab06/lab06.srcs/sources_1/new/regfile.v,1525178138,verilog,,,,regfile,,,,,,,,

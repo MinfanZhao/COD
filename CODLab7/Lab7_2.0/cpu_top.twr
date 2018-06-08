@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n 3
+-fastpaths -xml cpu_top.twx cpu_top.ncd -o cpu_top.twr cpu_top.pcf -ucf
+Nexys3_Master.ucf
+
+Design file:              cpu_top.ncd
+Physical constraint file: cpu_top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+data<1>     |        17.809(R)|      SLOW  |         6.157(R)|      FAST  |clk_BUFGP         |   0.000|
+data<2>     |        17.588(R)|      SLOW  |         6.016(R)|      FAST  |clk_BUFGP         |   0.000|
+data<3>     |        17.534(R)|      SLOW  |         5.886(R)|      FAST  |clk_BUFGP         |   0.000|
+data<4>     |        17.660(R)|      SLOW  |         5.963(R)|      FAST  |clk_BUFGP         |   0.000|
+data<5>     |        17.638(R)|      SLOW  |         5.756(R)|      FAST  |clk_BUFGP         |   0.000|
+data<6>     |        17.499(R)|      SLOW  |         5.984(R)|      FAST  |clk_BUFGP         |   0.000|
+data<7>     |        17.614(R)|      SLOW  |         6.024(R)|      FAST  |clk_BUFGP         |   0.000|
+sel<0>      |        11.579(R)|      SLOW  |         5.344(R)|      FAST  |clk_BUFGP         |   0.000|
+sel<1>      |        11.659(R)|      SLOW  |         5.400(R)|      FAST  |clk_BUFGP         |   0.000|
+sel<2>      |        10.963(R)|      SLOW  |         4.778(R)|      FAST  |clk_BUFGP         |   0.000|
+sel<3>      |        10.890(R)|      SLOW  |         4.740(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.842|         |         |         |
+rrst           |   25.603|   13.894|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rrst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.411|         |         |         |
+rrst           |    7.203|    7.203|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+swi<0>         |data<1>        |   21.212|
+swi<0>         |data<2>        |   21.000|
+swi<0>         |data<3>        |   20.937|
+swi<0>         |data<4>        |   21.063|
+swi<0>         |data<5>        |   21.041|
+swi<0>         |data<6>        |   20.902|
+swi<0>         |data<7>        |   21.026|
+swi<1>         |data<1>        |   19.967|
+swi<1>         |data<2>        |   19.746|
+swi<1>         |data<3>        |   19.692|
+swi<1>         |data<4>        |   19.818|
+swi<1>         |data<5>        |   19.796|
+swi<1>         |data<6>        |   19.657|
+swi<1>         |data<7>        |   19.772|
+swi<2>         |data<1>        |   19.923|
+swi<2>         |data<2>        |   20.038|
+swi<2>         |data<3>        |   20.210|
+swi<2>         |data<4>        |   20.336|
+swi<2>         |data<5>        |   19.778|
+swi<2>         |data<6>        |   19.613|
+swi<2>         |data<7>        |   20.064|
+swi<3>         |data<1>        |   20.221|
+swi<3>         |data<2>        |   20.000|
+swi<3>         |data<3>        |   19.946|
+swi<3>         |data<4>        |   20.072|
+swi<3>         |data<5>        |   20.050|
+swi<3>         |data<6>        |   19.911|
+swi<3>         |data<7>        |   20.026|
+swi<4>         |data<1>        |   20.056|
+swi<4>         |data<2>        |   19.835|
+swi<4>         |data<3>        |   19.781|
+swi<4>         |data<4>        |   19.907|
+swi<4>         |data<5>        |   19.885|
+swi<4>         |data<6>        |   19.746|
+swi<4>         |data<7>        |   19.861|
+swi<5>         |data<1>        |   21.205|
+swi<5>         |data<2>        |   20.984|
+swi<5>         |data<3>        |   20.930|
+swi<5>         |data<4>        |   21.056|
+swi<5>         |data<5>        |   21.034|
+swi<5>         |data<6>        |   20.895|
+swi<5>         |data<7>        |   21.010|
+swi<6>         |data<1>        |   19.324|
+swi<6>         |data<2>        |   19.158|
+swi<6>         |data<3>        |   19.445|
+swi<6>         |data<4>        |   19.571|
+swi<6>         |data<5>        |   19.153|
+swi<6>         |data<6>        |   19.014|
+swi<6>         |data<7>        |   19.184|
+swi<7>         |data<1>        |   17.800|
+swi<7>         |data<2>        |   17.579|
+swi<7>         |data<3>        |   17.629|
+swi<7>         |data<4>        |   17.755|
+swi<7>         |data<5>        |   17.629|
+swi<7>         |data<6>        |   17.490|
+swi<7>         |data<7>        |   17.605|
+---------------+---------------+---------+
+
+
+Analysis completed Wed May 24 23:43:06 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 266 MB
+
+
+

@@ -1,0 +1,85 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Thu Jun 07 19:33:42 2018
+| Host         : LAPTOP-MKE09LNG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file cpu_top_control_sets_placed.rpt
+| Design       : cpu_top
+| Device       : xc7a75t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            4 |
+| No           | No                    | Yes                    |              19 |            4 |
+| No           | Yes                   | No                     |             220 |          135 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             480 |          262 |
+| Yes          | Yes                   | No                     |             139 |           62 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+----------------------------------------------------------------------------------------+------------------------+------------------+----------------+
+|     Clock Signal    |                                      Enable Signal                                     |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------+----------------------------------------------------------------------------------------+------------------------+------------------+----------------+
+|  CLK50MHZ_IBUF_BUFG |                                                                                        |                        |                4 |              7 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/E[0]                                                                          | u_regfile/SR[0]        |               15 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[10][0][0]                                                            | u_regfile/SR[0]        |               21 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[3][0][0]                                                             | u_regfile/SR[0]        |               22 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[4][0][0]                                                             | u_regfile/SR[0]        |               12 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[1][0][0]                                                             | u_regfile/SR[0]        |               16 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[14][0][0]                                                            | u_regfile/SR[0]        |               13 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[2][0][0]                                                             | u_regfile/SR[0]        |               14 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[5][0][0]                                                             | u_regfile/SR[0]        |               19 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[6][0][0]                                                             | u_regfile/SR[0]        |               18 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[7][0][0]                                                             | u_regfile/SR[0]        |               15 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[8][0][0]                                                             | u_regfile/SR[0]        |               30 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[9][0][0]                                                             | u_regfile/SR[0]        |               28 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[11][0][0]                                                            | u_regfile/SR[0]        |               13 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[13][0][0]                                                            | u_regfile/SR[0]        |               12 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_mem_wb/regs_reg[15][0][0]                                                            | u_regfile/SR[0]        |               14 |             32 |
+|  n_0_2251_BUFG      |                                                                                        | u_regfile/SR[0]        |               20 |             32 |
+|  n_1_208_BUFG       |                                                                                        | u_regfile/SR[0]        |               20 |             32 |
+|  n_2_2108_BUFG      |                                                                                        | u_regfile/SR[0]        |               23 |             32 |
+|  CLK50MHZ_IBUF_BUFG | u_if_id/p_0_in                                                                         | u_regfile/SR[0]        |               25 |             48 |
+|  CLK50MHZ_IBUF_BUFG | u_if_id/p_0_in                                                                         | u_if_id/ex_wreg_reg[0] |               37 |             91 |
+|  CLK50MHZ_IBUF_BUFG | u_RAM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                        |               32 |            128 |
+|  CLK50MHZ_IBUF_BUFG | u_RAM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                        |               32 |            128 |
+|  CLK50MHZ_IBUF_BUFG |                                                                                        | u_regfile/SR[0]        |               76 |            143 |
++---------------------+----------------------------------------------------------------------------------------+------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 7      |                     1 |
+| 16+    |                    23 |
++--------+-----------------------+
+
+

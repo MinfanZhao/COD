@@ -1,0 +1,74 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Thu Nov 09 18:57:46 2017
+| Host         : LAPTOP-MKE09LNG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a75t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    86 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              38 |           14 |
+| No           | Yes                   | No                     |               4 |            4 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+---------------+------------------------------+------------------+----------------+
+|          Clock Signal         | Enable Signal |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-------------------------------+---------------+------------------------------+------------------+----------------+
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/cnt_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  mycnt/cnt_reg[0]_LDC_i_1_n_0 |               | mycnt/cnt_reg[0]_LDC_i_2_n_0 |                1 |              1 |
+|  mycnt/cnt_reg[1]_LDC_i_1_n_0 |               | mycnt/cnt_reg[1]_LDC_i_2_n_0 |                1 |              1 |
+|  mycnt/cnt_reg[2]_LDC_i_1_n_0 |               | mycnt/cnt_reg[2]_LDC_i_2_n_0 |                1 |              1 |
+|  mycnt/cnt_reg[3]_LDC_i_1_n_0 |               | mycnt/cnt_reg[3]_LDC_i_2_n_0 |                1 |              1 |
+|  CLK50MHZ_IBUF_BUFG           |               | mycnt/count[29]_i_2_n_0      |                6 |             30 |
++-------------------------------+---------------+------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    12 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

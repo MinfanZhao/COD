@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jun 07 19:32:14 2018
+# Process ID: 9128
+# Current directory: C:/Users/19079/PIPELINE/PIPELINE.runs/synth_1
+# Command line: vivado.exe -log cpu_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_top.tcl
+# Log file: C:/Users/19079/PIPELINE/PIPELINE.runs/synth_1/cpu_top.vds
+# Journal file: C:/Users/19079/PIPELINE/PIPELINE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cpu_top.tcl -notrace

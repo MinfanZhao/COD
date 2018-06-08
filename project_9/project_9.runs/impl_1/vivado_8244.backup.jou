@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Nov 30 01:25:24 2017
+# Process ID: 8244
+# Current directory: C:/Users/19079/project_9/project_9.runs/impl_1
+# Command line: vivado.exe -log Lab06.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab06.tcl -notrace
+# Log file: C:/Users/19079/project_9/project_9.runs/impl_1/Lab06.vdi
+# Journal file: C:/Users/19079/project_9/project_9.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Lab06.tcl -notrace

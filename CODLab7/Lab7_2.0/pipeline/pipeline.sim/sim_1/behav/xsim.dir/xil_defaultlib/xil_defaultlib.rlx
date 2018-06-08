@@ -1,0 +1,23 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,1495639896,verilog,,,,,,,,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Stall.v,1495618776,verilog,,,,Stall,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/code.v,1495631769,verilog,,,,code,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/cpu_top.v,1528199189,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,cpu_top,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/div.v,1495631551,verilog,,,,div,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/ex.v,1495639312,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,ex,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/ex_mem.v,1495639166,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,ex_mem,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/id.v,1495640422,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,id,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/id_ex.v,1495640355,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,id_ex,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/if_id.v,1495639151,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,if_id,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/mem.v,1495639421,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,mem,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/mem_wb.v,1495638594,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,mem_wb,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/pc.v,1495639082,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,pc,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/pipeline/pipeline.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/pipeline/pipeline.srcs/sources_1/ip/RAM/RAM.v,1495630180,verilog,,,,RAM,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/pipeline/pipeline.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1528265710,verilog,,,,dist_mem_gen_0,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/pipeline/pipeline.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v,1528265801,verilog,,,,dist_mem_gen_1,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/regfile.v,1528266630,verilog,,,C:/Users/19079/Desktop/CODLab7/Lab7_2.0/Define.v,regfile,,,../../../../,,,,,
+C:/Users/19079/Desktop/CODLab7/Lab7_2.0/testbench.v,1528267557,verilog,,,,testbench,,,../../../../,,,,,

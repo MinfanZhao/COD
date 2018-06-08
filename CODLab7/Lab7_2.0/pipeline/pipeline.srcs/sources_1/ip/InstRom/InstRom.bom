@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="InstRom">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="InstRom/dist_mem_gen_v7_2_readme.txt" type="ignore" timestamp="Sun Oct 13 18:09:43 2013" checksum="0">
+				</File>
+				<File name="InstRom/doc/dist_mem_gen_v7_2_vinfo.html" type="ignore" timestamp="Wed May 24 16:41:37 2017" checksum="0">
+				</File>
+				<File name="InstRom/doc/pg063-dist-mem-gen.pdf" type="ignore" timestamp="Wed May 24 16:41:37 2017" checksum="0">
+				</File>
+				<File name="InstRom/example_design/InstRom_exdes.ucf" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/example_design/InstRom_exdes.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/example_design/InstRom_exdes.xdc" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/example_design/InstRom_prod_exdes.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/implement.bat" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/implement.sh" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/implement_synplify.bat" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/implement_synplify.sh" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/planAhead_ise.bat" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/planAhead_ise.sh" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/planAhead_ise.tcl" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/xst.prj" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/implement/xst.scr" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/InstRom_tb.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/InstRom_tb_agen.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/InstRom_tb_pkg.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/InstRom_tb_stim_gen.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/InstRom_tb_synth.vhd" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/functional/simulate_mti.do" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/timing/simulate_mti.do" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Wed May 24 16:40:50 2017" checksum="0">
+				</File>
+				<File name="InstRom.asy" type="asy" timestamp="Wed May 24 16:41:37 2017" checksum="0">
+				</File>
+				<File name="InstRom.mif" type="ignore" timestamp="Wed May 24 16:41:37 2017" checksum="0">
+				</File>
+				<File name="InstRom.ngc" type="ngc" timestamp="Wed May 24 16:41:35 2017" checksum="0">
+				</File>
+				<File name="InstRom.sym" type="asy" timestamp="Wed May 24 16:41:38 2017" checksum="0">
+				</File>
+				<File name="InstRom.v" type="verilog" timestamp="Wed May 24 16:41:36 2017" checksum="0">
+				</File>
+				<File name="InstRom.veo" type="veo" timestamp="Wed May 24 16:41:36 2017" checksum="0">
+				</File>
+				<File name="InstRom.xco" type="xco" timestamp="Wed May 24 16:40:49 2017" checksum="0">
+				</File>
+				<File name="InstRom_xmdf.tcl" type="ignore" timestamp="Wed May 24 16:41:38 2017" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+

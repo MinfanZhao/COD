@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a75tcsg324-1" LaunchTime="1512040572">
+  <File Type="ROUTE-PWR-RPX" Name="Lab06_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="Lab06.tcl"/>
+  <File Type="INIT-TIMING" Name="Lab06_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Lab06_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Lab06_drc_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="Lab06.vdi"/>
+  <File Type="OPT-DCP" Name="Lab06_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="Lab06.hwdef"/>
+  <File Type="OPT-DRC" Name="Lab06_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="Lab06_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Lab06_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Lab06_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Lab06_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Lab06_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Lab06_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Lab06_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Lab06_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Lab06_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Lab06_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Lab06_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Lab06_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Lab06_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Lab06_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Lab06_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Lab06_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Lab06_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Lab06_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Lab06_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Lab06_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Lab06_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Lab06_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Lab06_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="Lab06.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Lab06_methodology_drc_routed.rpt"/>
+  <File Type="BG-DRC" Name="Lab06.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Lab06_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="Lab06.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Lab06_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="Lab06.bgn"/>
+  <File Type="ROUTE-PWR" Name="Lab06_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Lab06_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Lab06_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Lab06_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Lab06_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Lab06_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Lab06_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Lab06_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Lab06_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Lab06_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Lab06_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Lab06_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Lab06_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Lab06_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Lab06.bit"/>
+  <File Type="BITSTR-RBT" Name="Lab06.rbt"/>
+  <File Type="BITSTR-NKY" Name="Lab06.nky"/>
+  <File Type="BITSTR-BMM" Name="Lab06_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Lab06.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Lab06.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/regfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/_inc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab06.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/_time.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Lab06"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="E:/模数实验/CS_LAB/STEP资料/io_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
